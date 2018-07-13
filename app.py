@@ -154,5 +154,25 @@ def map():
 @app.route("/pycharts")
 def correlation():
     return render_template("py-index.html")
+
+@app.route("/tableau")
+def tableau():
+    return render_template("tableau-index.html")
+
+
+@app.route("/tableaumap")
+def tableaumap():
+    return render_template("tableau-map-index.html")
+
+
+@app.route("/tableauvariety")
+def tableauvariety():
+    return render_template("tableau-var-index.html")
+
+
+@app.route("/tableautaster")
+def tableautaster():
+    return render_template("tableau-tstr-index.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
